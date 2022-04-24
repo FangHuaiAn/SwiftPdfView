@@ -16,6 +16,13 @@
 		8B75FB6B28131F11006CD80D /* StrategistReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B75FB6A28131F11006CD80D /* StrategistReaderTests.swift */; };
 		8B75FB7528131F11006CD80D /* StrategistReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B75FB7428131F11006CD80D /* StrategistReaderUITests.swift */; };
 		8B75FB7728131F11006CD80D /* StrategistReaderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B75FB7628131F11006CD80D /* StrategistReaderUITestsLaunchTests.swift */; };
+		8B75FB8B2813D732006CD80D /* The Limits of Restraint.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8B75FB842813D731006CD80D /* The Limits of Restraint.pdf */; };
+		8B75FB8C2813D732006CD80D /* American Grand Strategy and Corporate Elite Networks The Open Door since the End of the Cold War.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8B75FB852813D731006CD80D /* American Grand Strategy and Corporate Elite Networks The Open Door since the End of the Cold War.pdf */; };
+		8B75FB8D2813D732006CD80D /* TheOriginOfNetAssessment.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8B75FB862813D731006CD80D /* TheOriginOfNetAssessment.pdf */; };
+		8B75FB8E2813D732006CD80D /* The evolution of modern grand strategic thought.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8B75FB872813D731006CD80D /* The evolution of modern grand strategic thought.pdf */; };
+		8B75FB8F2813D732006CD80D /* Grand Strategy in Theory and Practice The Need for an Effective American Foreign Policy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8B75FB882813D731006CD80D /* Grand Strategy in Theory and Practice The Need for an Effective American Foreign Policy.pdf */; };
+		8B75FB902813D732006CD80D /* The Projects of Skunk Works 75 Years of Lockheed Martin’s Advanced Development Programs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8B75FB892813D732006CD80D /* The Projects of Skunk Works 75 Years of Lockheed Martin’s Advanced Development Programs.pdf */; };
+		8B75FB912813D732006CD80D /* Net Assessment and Military Strategy Retrospective and Prospective Essays.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8B75FB8A2813D732006CD80D /* Net Assessment and Military Strategy Retrospective and Prospective Essays.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		8B75FB7028131F11006CD80D /* StrategistReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrategistReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B75FB7428131F11006CD80D /* StrategistReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategistReaderUITests.swift; sourceTree = "<group>"; };
 		8B75FB7628131F11006CD80D /* StrategistReaderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategistReaderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8B75FB842813D731006CD80D /* The Limits of Restraint.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "The Limits of Restraint.pdf"; sourceTree = "<group>"; };
+		8B75FB852813D731006CD80D /* American Grand Strategy and Corporate Elite Networks The Open Door since the End of the Cold War.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "American Grand Strategy and Corporate Elite Networks The Open Door since the End of the Cold War.pdf"; sourceTree = "<group>"; };
+		8B75FB862813D731006CD80D /* TheOriginOfNetAssessment.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TheOriginOfNetAssessment.pdf; sourceTree = "<group>"; };
+		8B75FB872813D731006CD80D /* The evolution of modern grand strategic thought.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "The evolution of modern grand strategic thought.pdf"; sourceTree = "<group>"; };
+		8B75FB882813D731006CD80D /* Grand Strategy in Theory and Practice The Need for an Effective American Foreign Policy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Grand Strategy in Theory and Practice The Need for an Effective American Foreign Policy.pdf"; sourceTree = "<group>"; };
+		8B75FB892813D732006CD80D /* The Projects of Skunk Works 75 Years of Lockheed Martin’s Advanced Development Programs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "The Projects of Skunk Works 75 Years of Lockheed Martin’s Advanced Development Programs.pdf"; sourceTree = "<group>"; };
+		8B75FB8A2813D732006CD80D /* Net Assessment and Military Strategy Retrospective and Prospective Essays.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Net Assessment and Military Strategy Retrospective and Prospective Essays.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,7 @@
 		8B75FB5228131F0E006CD80D /* StrategistReader */ = {
 			isa = PBXGroup;
 			children = (
+				8B75FB832813D6B8006CD80D /* Books */,
 				8B75FB5328131F0E006CD80D /* AppDelegate.swift */,
 				8B75FB5528131F0E006CD80D /* SceneDelegate.swift */,
 				8B75FB5728131F0E006CD80D /* ViewController.swift */,
@@ -125,6 +140,20 @@
 				8B75FB7628131F11006CD80D /* StrategistReaderUITestsLaunchTests.swift */,
 			);
 			path = StrategistReaderUITests;
+			sourceTree = "<group>";
+		};
+		8B75FB832813D6B8006CD80D /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				8B75FB852813D731006CD80D /* American Grand Strategy and Corporate Elite Networks The Open Door since the End of the Cold War.pdf */,
+				8B75FB882813D731006CD80D /* Grand Strategy in Theory and Practice The Need for an Effective American Foreign Policy.pdf */,
+				8B75FB8A2813D732006CD80D /* Net Assessment and Military Strategy Retrospective and Prospective Essays.pdf */,
+				8B75FB872813D731006CD80D /* The evolution of modern grand strategic thought.pdf */,
+				8B75FB842813D731006CD80D /* The Limits of Restraint.pdf */,
+				8B75FB892813D732006CD80D /* The Projects of Skunk Works 75 Years of Lockheed Martin’s Advanced Development Programs.pdf */,
+				8B75FB862813D731006CD80D /* TheOriginOfNetAssessment.pdf */,
+			);
+			path = Books;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +260,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B75FB8F2813D732006CD80D /* Grand Strategy in Theory and Practice The Need for an Effective American Foreign Policy.pdf in Resources */,
+				8B75FB912813D732006CD80D /* Net Assessment and Military Strategy Retrospective and Prospective Essays.pdf in Resources */,
 				8B75FB6028131F11006CD80D /* LaunchScreen.storyboard in Resources */,
 				8B75FB5D28131F11006CD80D /* Assets.xcassets in Resources */,
 				8B75FB5B28131F0E006CD80D /* Main.storyboard in Resources */,
+				8B75FB8E2813D732006CD80D /* The evolution of modern grand strategic thought.pdf in Resources */,
+				8B75FB8D2813D732006CD80D /* TheOriginOfNetAssessment.pdf in Resources */,
+				8B75FB8C2813D732006CD80D /* American Grand Strategy and Corporate Elite Networks The Open Door since the End of the Cold War.pdf in Resources */,
+				8B75FB902813D732006CD80D /* The Projects of Skunk Works 75 Years of Lockheed Martin’s Advanced Development Programs.pdf in Resources */,
+				8B75FB8B2813D732006CD80D /* The Limits of Restraint.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +456,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
