@@ -9,17 +9,27 @@ import UIKit
 import PDFKit
 import WebKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, PDFViewDelegate
+{
 
     @IBOutlet weak var previewPdfView: UIView!
     
     let books : [String] = [
-        "American Grand Strategy and Corporate Elite Networks The Open Door since the End of the Cold War"
-        , "Grand Strategy in Theory and Practice The Need for an Effective American Foreign Policy"
+        "Air War in the Falklands 1982"
+        ,"American Grand Strategy and Corporate Elite Networks The Open Door since the End of the Cold War"
+        ,"Combat modeling"
+        ,"Comparative Grand Strategy A Framework And Cases"
+        ,"Grand Strategy in Theory and Practice The Need for an Effective American Foreign Policy"
         ,"Net Assessment and Military Strategy Retrospective and Prospective Essays"
+        ,"Strategic Air Power in Desert Storm"
+        ,"Strategic Studies A Reader"
+        ,"Strategy The Logic of War and Peace"
         ,"The evolution of modern grand strategic thought"
         ,"The Limits of Restraint"
         ,"The Projects of Skunk Works 75 Years of Lockheed Martin’s Advanced Development Programs"
+        ,"The Science of War Defense Budgeting, Military Technology, Logistics, and Combat Outcomes"
+        ,"The Shaping of Grand Strategy Policy, Diplomacy, and War"
+        ,"The Twilight Struggle What the Cold War Teaches Us about Great-Power Rivalry Today"
         ,"TheOriginOfNetAssessment"
     ]
     
@@ -28,11 +38,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnBack: UIBarButtonItem!
     @IBOutlet weak var btnForward: UIBarButtonItem!
     
-    fileprivate func loadPdf( index : Int  ) {
+    fileprivate func loadPdf(with index : Int  ) {
         if let pdfUrl = Bundle.main.url(forResource: books[index], withExtension: "pdf") {
-            pdfView.document = PDFDocument(url: pdfUrl)
+            
+            guard let document = PDFDocument(url: pdfUrl) else{
+                return
+            }
+            
+            pdfView.document = document
             pdfView.displaysAsBook = true
             pdfView.autoScales = true
+            pdfView.documentView?.sizeToFit()
         }
     }
     
@@ -42,7 +58,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         pdfView.frame = previewPdfView.bounds
-        
         previewPdfView.addSubview(pdfView)
         
         //
@@ -54,7 +69,7 @@ class ViewController: UIViewController {
         }
         
         //
-        loadPdf(index: bookIndex)
+        loadPdf(with: bookIndex)
     }
 
     @IBAction
@@ -71,7 +86,7 @@ class ViewController: UIViewController {
         }
         btnForward.isEnabled = true
 
-        loadPdf(index: bookIndex)
+        loadPdf(with: bookIndex)
     }
 
     @IBAction
@@ -88,7 +103,10 @@ class ViewController: UIViewController {
         }
         btnBack.isEnabled = true
         
-        loadPdf(index: bookIndex)
+        loadPdf(with: bookIndex)
+    }
+    
+    func pdfViewWillClick(onLink sender: PDFView, with url: URL) {
         
     }
 }
